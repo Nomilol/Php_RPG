@@ -1,9 +1,10 @@
 <?php
 
-include('user.php');
+require 'user.php';
 
 class Client extends User {
-	public function buy(){
 
+	public function buy(){
+		return;
 	}
 }

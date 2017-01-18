@@ -1,13 +1,13 @@
 <?php
 
-include('user.php');
+require 'client.php';
 
-$user1 = new User("machin@gmail.com", "1", "18/01/2017");
-$user2 = new User("deuxiemeMachin@gmail.com", "2", "18/01/2017");
+$user1 = new Client("1", "machin@gmail.com", "18/01/2017");
+$user2 = new Client("2", "deuxiemeMachin@gmail.com", "18/01/2017");
 
+$myArray = [
+	$user1,
+	$user2
+];
 
-
-
-
-
-
+return $myArray;
