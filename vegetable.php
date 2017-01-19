@@ -9,7 +9,11 @@ class Vegetable extends Product {
       $this->setExpiresAt($expiresAt);
     }
     public function isFresh() {
-
+      if ($expiresAt > 24) {
+        return true;
+      }else {
+        return false;
+      }
     }
     public function getProductorName() {
       return $this->_productorName;
