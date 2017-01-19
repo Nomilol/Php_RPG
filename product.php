@@ -5,7 +5,7 @@ class Product {
   private $_name;
   private $_price;
 
-  public function __construct() {
+  public function __construct($id, $name, $price) {
     $this->setId($id);
     $this->setName($name);
     $this->setPrice($price);
